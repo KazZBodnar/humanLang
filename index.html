@@ -1,0 +1,116 @@
+<h1 id="humanlang">HumanLang</h1>
+<h5 id="details-will-be-written-down-sooner-or-later-have-a-great-day-">Details will be written down sooner or later. Have a great day.</h5>
+<h2 id="example-">Example:</h2>
+<h3 id="python-">Python:</h3>
+<code>
+<span class="hljs-keyword">import</span> random
+print(<span class="hljs-string">"DnD Virtual PyDice Roller"</span>)
+rr = input(<span class="hljs-string">"Commands: 'd4', 'd6', 'd8', 'd10', 'd12', 'd20', 'd100'. &gt;"</span>)
+<span class="hljs-keyword">if</span> rr == <span class="hljs-string">"d4"</span>:
+    rand = random.randint(1, 4)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d4 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+elif rr == <span class="hljs-string">"d6"</span>:
+    rand = random.randint(1, 6)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d6 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">" __________"</span>)
+    print(<span class="hljs-string">"|\ o       \\"</span>)
+    print(<span class="hljs-string">"| \_______o\u0332_\\"</span>)
+    print(<span class="hljs-string">"| | o       |"</span>)
+    print(<span class="hljs-string">"|o|    o    |"</span>)
+    print(<span class="hljs-string">"\ |       o |"</span>)
+    print(<span class="hljs-string">" \|_________|"</span>)
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+elif rr == <span class="hljs-string">"d8"</span>:
+    rand = random.randint(1, 8)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d8 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+elif rr == <span class="hljs-string">"d10"</span>:
+    rand = random.randint(1, 10)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d10 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+elif rr == <span class="hljs-string">"d12"</span>:
+    rand = random.randint(1, 12)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d12 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+elif rr == <span class="hljs-string">"d20"</span>:
+    rand = random.randint(1, 20)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d20 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+elif rr == <span class="hljs-string">"d100"</span>:
+    rand = random.randint(1, 100)
+    num = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many d100 do you want to roll? &gt;"</span>))
+    add = <span class="hljs-keyword">int</span>(input(<span class="hljs-string">"How many should I add to the roll? &gt;"</span>))
+    print(<span class="hljs-string">"Rolling..."</span>)
+    print((rand*num)+add)
+<span class="hljs-keyword">else</span>:
+    print(<span class="hljs-string">"I am sorry, but I am unable to process your request. You might have made a typo."</span>)
+</code>
+<h3 id="humanlang-">HumanLang:</h3>
+<code>Order <span class="hljs-string">'random'</span>
+<span class="hljs-built_in">Say</span>, <span class="hljs-string">"DnD Virtual HLDice Roller V 1.0"</span>
+Ask, <span class="hljs-string">"Commands: 'd4', 'd6', 'd8', 'd10', 'd12', 'd20', 'd100'. &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'rr'</span>.
+<span class="hljs-keyword">If</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d4"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">4</span>.
+    Ask, <span class="hljs-string">"How many d4 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-built_in">Or</span>, <span class="hljs-keyword">if</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d6"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">6</span>.
+    Ask, <span class="hljs-string">"How many d6 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">" __________"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"|\ o       \\"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"| \_______o"</span>, <span class="hljs-built_in">and</span> a special character called u0332, <span class="hljs-built_in">and</span> <span class="hljs-string">"\"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"| | o       |"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"|o|    o    |"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"\ |       o |"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">" \|_________|"</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-built_in">Or</span>, <span class="hljs-keyword">if</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d8"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">8</span>.
+    Ask, <span class="hljs-string">"How many d8 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-built_in">Or</span>, <span class="hljs-keyword">if</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d10"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">10</span>.
+    Ask, <span class="hljs-string">"How many d10 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-built_in">Or</span>, <span class="hljs-keyword">if</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d12"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">12</span>.
+    Ask, <span class="hljs-string">"How many d12 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-built_in">Or</span>, <span class="hljs-keyword">if</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d20"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">20</span>.
+    Ask, <span class="hljs-string">"How many d20 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-built_in">Or</span>, <span class="hljs-keyword">if</span> <span class="hljs-string">'rr'</span> is <span class="hljs-string">"d100"</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-keyword">To</span> get <span class="hljs-string">'rand'</span>, get an integer between <span class="hljs-number">1</span> <span class="hljs-built_in">and</span> <span class="hljs-number">100</span>.
+    Ask, <span class="hljs-string">"How many d100 do you want to roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'num'</span>.
+    Ask, <span class="hljs-string">"How many should I add to the roll? &gt;"</span> <span class="hljs-built_in">and</span> it means <span class="hljs-string">'add'</span>.
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"Rolling..."</span>.
+    <span class="hljs-built_in">Say</span>, (<span class="hljs-string">'rand'</span>*<span class="hljs-string">'num'</span>)+<span class="hljs-string">'add'</span>.
+<span class="hljs-keyword">If</span> there is anything <span class="hljs-keyword">else</span>, <span class="hljs-keyword">then</span>:
+    <span class="hljs-built_in">Say</span>, <span class="hljs-string">"I am sorry, but I am unable to process your request. You might have made a typo."</span>.
+</code>
